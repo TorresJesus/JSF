@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="tecnica/list-tecnica.xhtml" x="1150" y="150" zoom="true"/>
+        <Node id="roles/list-roles.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="index.xhtml" x="392" y="202" zoom="true"/>
+        <Node id="marcial/form-marcial.xhtml" x="1089" y="368" zoom="true"/>
+        <Node id="roles/form-roles.xhtml" x="869" y="113" zoom="true"/>
+        <Node id="tecnica/form-tecnica.xhtml" x="1109" y="311" zoom="true"/>
+        <Node id="*" x="588" y="87" zoom="true"/>
+        <Node id="login.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="usuarios/form-usuarios.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="marcial/list-marcial.xhtml" x="1056" y="497" zoom="true"/>
+        <Node id="modulos/form-modulos.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="usuarios/list-usuarios.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="modulos/list-modulos.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="templates/template.xhtml" x="150" y="450" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

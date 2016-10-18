@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>#{str.marcialListTitle}</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/templates/template.xhtml">
+            <ui:define name="contenido">
+                <h1>#{str.marcialListTitle}</h1>
+                <h:form>
+                    <p:commandButton value="#{str.buttonAdd}"
+                                     action="#{marcialBean.iniciar()}"></p:commandButton>
+                </h:form>
+                <p:dataTable value="#{marcialBean.marciales}" var="m">
+                    <p:column headerText="#{str.action}">
+                        <h:form>
+                            <p:commandButton value="#{str.buttonEdit}"
+                                             action="#{marcialBean.editar(m)}"></p:commandButton>
+                        </h:form>
+                    </p:column>
+                    <p:column headerText="#{str.marcialNameHeader}">
+                        <p:outputLabel value="#{m.nombre}"></p:outputLabel>
+                    </p:column>
+                        <p:column headerText="#{str.nacionality}">
+                            <p:outputLabel value="#{m.nacionalidad}"></p:outputLabel>
+                        </p:column>
+                        <p:column headerText="#{str.mortality}">
+                            <p:outputLabel value="#{m.mortalidad}"></p:outputLabel>
+                        </p:column>
+                </p:dataTable>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
