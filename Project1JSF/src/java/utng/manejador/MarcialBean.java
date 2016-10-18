@@ -78,6 +78,7 @@ public class MarcialBean implements Serializable{
             } else {
                 dao.insert(marcial);
             }
+            marciales = dao.getAll();
         } catch (Exception e) {
             e.printStackTrace();
         }
