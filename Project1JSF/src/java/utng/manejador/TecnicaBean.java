@@ -50,7 +50,7 @@ public class TecnicaBean implements Serializable {
         return marciales;
     }
 
-    public void setRoles(List<Marcial> marciales) {
+    public void setMarciales(List<Marcial> marciales) {
         this.marciales = marciales;
     }
 
